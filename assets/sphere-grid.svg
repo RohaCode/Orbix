@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <style>
+    .grid-circle {
+        fill: none;
+        stroke: #FFB020;
+        stroke-width: 0.8px;
+        stroke-opacity: 0.28;
+        stroke-dasharray: 4 4;
+    }
+    .grid-line {
+        stroke: #FFB020;
+        stroke-width: 0.5px;
+        stroke-opacity: 0.18;
+    }
+    .grid-dot {
+        fill: #FFB020;
+        fill-opacity: 0.5;
+        filter: drop-shadow(0 0 3px #FFB020);
+        r: 4.5px;
+    }
+    @media (max-width: 991px) {
+        .grid-circle {
+            stroke-opacity: 0.22;
+        }
+        .grid-line {
+            stroke-opacity: 0.12;
+        }
+        .grid-dot {
+            r: 3.5px;
+        }
+    }
+  </style>
+  <circle cx="250" cy="250" r="70" class="grid-circle"></circle>
+  <circle cx="250" cy="250" r="130" class="grid-circle"></circle>
+  <circle cx="250" cy="250" r="190" class="grid-circle"></circle>
+  <line x1="250" y1="40" x2="250" y2="460" class="grid-line"></line>
+  <line x1="40" y1="250" x2="460" y2="250" class="grid-line"></line>
+  <line x1="101" y1="101" x2="399" y2="399" class="grid-line"></line>
+  <line x1="101" y1="399" x2="399" y2="101" class="grid-line"></line>
+  <circle cx="250" cy="40" class="grid-dot"></circle>
+  <circle cx="250" cy="460" class="grid-dot"></circle>
+  <circle cx="40" cy="250" class="grid-dot"></circle>
+  <circle cx="460" cy="250" class="grid-dot"></circle>
+  <circle cx="101" cy="101" class="grid-dot"></circle>
+  <circle cx="399" cy="399" class="grid-dot"></circle>
+  <circle cx="101" cy="399" class="grid-dot"></circle>
+  <circle cx="399" cy="101" class="grid-dot"></circle>
+</svg>

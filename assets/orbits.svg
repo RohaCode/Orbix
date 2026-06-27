@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 400">
+  <style>
+    .orbit {
+        fill: none;
+        stroke: #FFB020;
+        transform-origin: center;
+    }
+    .orbit-1 { stroke-opacity: 0.06; stroke-width: 1px; }
+    .orbit-2 { stroke-opacity: 0.04; stroke-width: 1px; }
+    .orbit-3 { stroke-opacity: 0.02; stroke-width: 1.2px; }
+  </style>
+  <ellipse cx="500" cy="200" rx="430" ry="90" class="orbit orbit-1" transform="rotate(-15 500 200)"></ellipse>
+  <ellipse cx="500" cy="200" rx="470" ry="105" class="orbit orbit-2" transform="rotate(-8 500 200)"></ellipse>
+  <ellipse cx="500" cy="200" rx="510" ry="120" class="orbit orbit-3" transform="rotate(-2 500 200)"></ellipse>
+</svg>

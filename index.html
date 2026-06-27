@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orbix - 360 Panorama Camera for Android</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <meta
+      name="description"
+      content="Orbix captures 26 source photos, stitches them locally on the phone, and keeps the whole workflow 100% offline. Support development."
+    />
+  </head>
+  <body>
+    <!-- Interactive Canvas for Floating Amber Stars -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Ambient Background Blobs & Orbits -->
+    <div class="ambient-bg">
+      <div class="blob-1"></div>
+      <div class="blob-2"></div>
+
+      <!-- Concentric Background Orbits -->
+      <div class="orbits-container">
+        <img class="orbits-svg" src="assets/orbits.svg" alt="Concentric Orbits Decor" />
+      </div>
+    </div>
+
+    <!-- Symmetrical Responsive Layout Wrapper -->
+    <div class="app-layout">
+      <!-- 1. Left Column: App Features Floating Pane (Borderless) -->
+      <div class="glass-panel features-pane">
+        <h3 class="pane-header-title">Application Features</h3>
+
+        <div class="pane-items-list">
+          <!-- Feature 1 -->
+          <div class="feature-row-item">
+            <div class="feature-row-icon icon-camera"></div>
+            <div class="feature-row-text">
+              <h4>Guided Capture</h4>
+              <p>
+                Real-time sensor guidance with a 26-hotspot sphere grid to align
+                each image perfectly.
+              </p>
+            </div>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="feature-row-item">
+            <div class="feature-row-icon icon-cloud"></div>
+            <div class="feature-row-text">
+              <h4>Seamless Blending</h4>
+              <p>
+                Intelligently merges 26 shots into a flawless, high-resolution
+                360° sphere. Automatic exposure alignment and smart seam
+                smoothing happen in seconds.
+              </p>
+            </div>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="feature-row-item">
+            <div class="feature-row-icon icon-shield"></div>
+            <div class="feature-row-text">
+              <h4>100% Offline & Free</h4>
+              <p>
+                No accounts, no ads, no telemetry. Photos and processing remain
+                entirely on your device.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. Center Column: Branding & Direct Action -->
+      <div class="left-pane brand-pane">
+        <div class="brand-core">
+          <!-- App Logo Hero with Glowing Backdrop & Sphere Grid -->
+          <div class="logo-hero-container">
+            <div class="logo-hero-glow"></div>
+
+            <!-- Rotating Sphere/Camera Grid Overlay -->
+            <div class="sphere-grid-container">
+              <img class="sphere-grid-svg" src="assets/sphere-grid.svg" alt="Sphere Grid Overlay" />
+            </div>
+
+            <img
+              class="logo-hero-img"
+              src="assets/logo.png"
+              alt="Orbix Logo Aperture"
+            />
+          </div>
+
+          <h1 class="hero-title">Orbix</h1>
+          <h2 class="hero-tagline">360 PANORAMA CAMERA</h2>
+
+          <p class="hero-desc">
+            Offline capture and stitching on your Android device.
+          </p>
+
+          <!-- Feature Chips (matches OrbixFeatureChip in StartScreen) -->
+          <div class="chips-row">
+            <div class="feature-chip">
+              <span class="chip-dot"></span>
+              26 SHOTS
+            </div>
+            <div class="feature-chip">
+              <span class="chip-dot"></span>
+              OFFLINE
+            </div>
+            <div class="feature-chip">
+              <span class="chip-dot"></span>
+              8K RESOLUTION
+            </div>
+          </div>
+
+          <!-- Primary Action Buttons -->
+          <div class="button-wrap">
+            <button id="open-modal-btn" class="btn-primary" type="button">
+              <span class="btn-icon icon-support"></span>
+              Support Project
+            </button>
+            <button class="btn-primary" type="button">
+              <span class="btn-icon icon-download"></span>
+              Download App
+            </button>
+          </div>
+        </div>
+
+        <!-- Desktop-Only Center Footer -->
+        <footer class="desktop-footer">
+          <div class="footer-nav">
+            <a href="https://t.me/ReddelTom" target="_blank"
+              >Telegram Developer</a
+            >
+          </div>
+          <p class="copyright">&copy; 2026 Orbix Camera. Built local-first.</p>
+        </footer>
+      </div>
+
+      <!-- 3. Right Column: App Features Floating Pane 2 (Borderless) -->
+      <div class="glass-panel specs-pane">
+        <h3 class="pane-header-title">Technical Highlights</h3>
+
+        <div class="pane-items-list">
+          <!-- Spec 1: Interactive 3D Viewer -->
+          <div class="feature-row-item">
+            <div class="feature-row-icon icon-globe"></div>
+            <div class="feature-row-text">
+              <h4>Interactive 3D Viewer</h4>
+              <p>
+                Explore your captured panoramas instantly in the built-in
+                spherical viewer. Drag to rotate 360° or use motion sensors.
+              </p>
+            </div>
+          </div>
+
+          <!-- Spec 2: Universal Export -->
+          <div class="feature-row-item">
+            <div class="feature-row-icon icon-export"></div>
+            <div class="feature-row-text">
+              <h4>Universal Export</h4>
+              <p>
+                Saves panoramas as standard equirectangular JPEGs with complete
+                360° metadata. Ready to share directly to VR or Google Photos.
+              </p>
+            </div>
+          </div>
+
+          <!-- Spec 3: Hardware Efficient -->
+          <div class="feature-row-item">
+            <div class="feature-row-icon icon-bolt"></div>
+            <div class="feature-row-text">
+              <h4>Hardware Efficient</h4>
+              <p>
+                Optimized for mobile architectures. Real-time preview stitching
+                runs on the GPU, saving battery life while delivering maximum
+                quality.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile-Only Footer (at the absolute bottom of page flow) -->
+      <footer class="mobile-footer">
+        <div class="footer-nav">
+          <a href="https://t.me/ReddelTom" target="_blank"
+            >Telegram Developer</a
+          >
+        </div>
+        <p class="copyright">&copy; 2026 Orbix Camera. Built local-first.</p>
+      </footer>
+    </div>
+
+    <div id="donation-modal" class="modal-overlay">
+      <div class="modal-content glass-panel">
+        <button class="modal-close" id="close-modal-btn">&times;</button>
+        <h3 class="modal-title">Support Orbix</h3>
+        <p class="modal-subtitle">
+          Choose your preferred cryptocurrency to make a donation:
+        </p>
+
+        <div class="custom-select-container">
+          <div class="custom-select-trigger" id="custom-select-trigger">
+            <span>Select an asset...</span>
+          </div>
+
+          <div class="custom-options-list" id="custom-options-list"></div>
+        </div>
+
+        <div id="qr-container" class="qr-container">
+          <div id="qrcode"></div>
+          <div id="address-text" class="address-text"></div>
+        </div>
+      </div>
+    </div>
+    <script src="js/qrcode.min.js"></script>
+    <script src="js/donation-wallets.js"></script>
+    <script src="js/donation-modal.js"></script>
+    <script src="js/particles.js"></script>
+  </body>
+</html>
