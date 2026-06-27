@@ -11,15 +11,15 @@ This repository hosts the source code for the **Orbix Promotional Landing Page**
 
 ## 📸 App Screenshots
 
-### Core Capture & Gallery Workflow
-| Start Screen | Guided Capture Grid | Panorama Gallery |
-|:---:|:---:|:---:|
-| <img src="Screenshots/Start.png" width="250" alt="Start Screen"/> | <img src="Screenshots/Capture.png" width="250" alt="Guided Capture"/> | <img src="Screenshots/Gallery.png" width="250" alt="Panorama Gallery"/> |
+### Core Capture & Main Workflow
+| Start Screen | Guided Capture Grid | Panorama Gallery | Features Guide | Permissions Details |
+|:---:|:---:|:---:|:---:|:---:|
+| <img src="screenshots/Start.png" width="170" alt="Start Screen"/> | <img src="screenshots/Capture.png" width="170" alt="Guided Capture"/> | <img src="screenshots/Gallery.png" width="170" alt="Panorama Gallery"/> | <img src="screenshots/Features.png" width="170" alt="Features Guide"/> | <img src="screenshots/Permissions.png" width="170" alt="Permissions Details"/> |
 
-### Guides & Settings
-| Features Guide | Permissions Details | Settings & Info |
-|:---:|:---:|:---:|
-| <img src="Screenshots/Features.png" width="250" alt="Features Guide"/> | <img src="Screenshots/Permissions.png" width="250" alt="Permissions Details"/> | <img src="Screenshots/Settings.png" width="250" alt="Settings & Info"/> |
+### Additional Screens & Settings
+| Privacy Overview | Settings & Info | About Orbix | Clear Camera Roll | Team & Contacts |
+|:---:|:---:|:---:|:---:|:---:|
+| <img src="screenshots/Privace.png" width="170" alt="Privacy Overview"/> | <img src="screenshots/Settings.png" width="170" alt="Settings & Info"/> | <img src="screenshots/About.png" width="170" alt="About Orbix"/> | <img src="screenshots/Clear.png" width="170" alt="Clear Camera Roll"/> | <img src="screenshots/Team.png" width="170" alt="Team & Contacts"/> |
 
 ---
 
