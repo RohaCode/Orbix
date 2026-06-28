@@ -27,10 +27,12 @@ renderDonationOptions();
 
 openBtn.addEventListener("click", () => {
   modal.classList.add("active");
+  document.body.classList.add("modal-open");
 });
 
 const closeModal = () => {
   modal.classList.remove("active");
+  document.body.classList.remove("modal-open");
   selectOptionsList.classList.remove("open");
   selectTrigger.classList.remove("open");
   selectTrigger.querySelector("span").innerText = "Select an asset...";
